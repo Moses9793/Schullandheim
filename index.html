@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schullandheim Abenteuerland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9ff;
+            text-align: center;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .preisbox {
+            background-color: #ffeb99;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 40%;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffcc00;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Willkommen im Schullandheim Abenteuerland!</header>
+    <div class="container">
+        <h2>Über uns</h2>
+        <p>Unser Schullandheim bietet Natur, Spaß und Abenteuer für Schulklassen!</p>
+        <img src="schullandheim.jpg" alt="Schullandheim Abenteuerland">
+        
+        <h2>Unterkunft & Preise</h2>
+        <div class="preisbox">
+            <h3>Übernachtung</h3>
+            <p>Mehrbettzimmer: 20€ pro Nacht</p>
+            <p>Einzelzimmer für Lehrkräfte: 30€ pro Nacht</p>
+            <img src="zimmer.jpg" alt="Mehrbettzimmer">
+        </div>
+        <div class="preisbox">
+            <h3>Verpflegung</h3>
+            <p>Frühstück: 5€</p>
+            <p>Mittagessen: 7€</p>
+            <p>Abendessen: 6€</p>
+            <p>Vollpension: 15€ pro Tag</p>
+            <img src="essen.jpg" alt="Leckeres Essen">
+        </div>
+        <div class="preisbox">
+            <h3>Freizeitaktivitäten</h3>
+            <p>Waldwanderung: 5€</p>
+            <p>Kletterpark: 10€</p>
+            <p>Bootsfahrt: 8€</p>
+            <img src="freizeit.jpg" alt="Freizeitaktivitäten">
+        </div>
+        
+        <h2>Buchungsanfrage</h2>
+        <form>
+            <label for="name">Name der Schule:</label>
+            <input type="text" id="name" required><br><br>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" required><br><br>
+            <label for="message">Nachricht:</label><br>
+            <textarea id="message" rows="4" required></textarea><br><br>
+            <button type="submit">Anfrage senden</button>
+        </form>
+    </div>
+    <footer>Kontakt: info@schullandheim-abenteuerland.de</footer>
+</body>
+</html>
